@@ -1,1 +1,4 @@
-print(1*2+5)
+map = {}
+map[1] = "test"
+
+print(map)
