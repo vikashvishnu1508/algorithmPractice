@@ -1,14 +1,5 @@
-k = 4
-asc = ord('x')
+def caesarCipherEncryptor(string, key):
+    # Write your code here.
+    return ''.join([chr(ord(ch) + key) if (ord(ch) + key) <= 122 else chr(96 + ord(ch) + key - 122) for ch in string])
 
-print(asc)
-
-print(chr(96 + ((asc + k) - 122) ))
-print(chr(asc + k))
-
-if asc + k > 122:
-    # print(asc + k)
-    # print(96 + ((asc + k) - 122) )
-    print(chr(96 + asc + k - 122 ))
-else:
-    print(chr(asc + k))
+print(caesarCipherEncryptor('xyz', 26))
