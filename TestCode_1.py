@@ -1,0 +1,1 @@
+print('yes' if 0 < 5 < 9 else 'No')
