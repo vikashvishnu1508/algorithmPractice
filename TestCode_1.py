@@ -1,5 +1,3 @@
-a = []*6
-
-print(len(a))
+a = 80 / 8 / 5
 
 print(a)
